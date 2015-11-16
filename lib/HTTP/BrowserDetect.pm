@@ -129,7 +129,7 @@ our @ROBOT_TESTS = qw(
     linkchecker     yandeximages   specialarchiver
     yandex          java           lib
     indy            golib          rubylib
-    apache          msoffice
+    apache          msoffice       magpiecrawler
 );
 
 our @MISC_TESTS = qw(
@@ -179,6 +179,7 @@ my %ROBOT_NAMES = (
     lwp             => 'LWP::UserAgent',
     lycos           => 'Lycos',
     mj12bot         => 'Majestic-12 DSearch',
+    magpiecrawler   => 'Magpie Crawler',
     msn             => 'MSN',
     msnmobile       => 'MSN Mobile',
     msoffice        => 'Microsoft Office',
@@ -872,6 +873,9 @@ sub _init_robots {
     elsif ( index( $ua, "adsbot-google" ) != -1 ) {
         $r = 'googleadsbot';
         $robot_tests->{google} = 1;
+    }
+    elsif ( index( $ua, "magpie-crawler" ) != -1 ) {
+        $r = 'magpiecrawler';
     }
     elsif ( index( $ua, "mediapartners-google" ) != -1 ) {
         $r = 'googleadsense';
