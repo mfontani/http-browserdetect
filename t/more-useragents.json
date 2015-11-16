@@ -18816,6 +18816,18 @@
       "match" : [],
       "robot" : 0
    },
+   "magpie-crawler/1.1 (U; Linux amd64; en-GB; +http://www.brandwatch.net)" : {
+      "browser_major" : "1",
+      "browser_minor" : ".1",
+      "match" : [
+         "linux",
+         "magpiecrawler",
+         "robot",
+         "unix"
+      ],
+      "robot" : "magpiecrawler",
+      "robot_name" : "Magpie Crawler"
+   },
    "marine dredger for sale ( http://www.dredger.biz )" : {
       "browser_major" : 0,
       "browser_minor" : ".0",
